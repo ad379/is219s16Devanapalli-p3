@@ -16,23 +16,23 @@
 	<!-- DO NOT CHANGE ANYTHING ABOVE THIS LINE-->
 
 	<!-- Angular (ADD HERE) -->
-
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script> 
 	
 </head>
 
-  <body>
+  <body ng-app="IS219Gallery">
 	  
     <div class="header">
 	    
-      <div class="container">
-        <h1 id="app_title">%title%</h1>
+      <div class="container" ng-controller = "HomeController">
+        <h1 id="app_title">{{title}}</h1>
       </div>
       
     </div>
 
     <div class="main">
       
-      <div class="container">
+      <div class="container" ng-controller = "HomeController">
 
         <div class="col-md-6"> 
             <div class="thumbnail">
@@ -46,7 +46,7 @@
 					<p class="released">Released: %released% | Rated: %rating%</p>
 					<p class="websites">Websites: <a>%imdb%</a> | <a>%website%</a></p>
 					
-		            <div class="social">
+		            <div class="social" ng-controller = "HomeController">
 		              <p class="likes"><i class="fa fa-thumbs-up" aria-hidden="true"></i> %like%</p>
 		              <p class="dislikes"><i class="fa fa-thumbs-down" aria-hidden="true"></i> %dislike%</p>
 		            </div>
@@ -57,9 +57,9 @@
     </div>
 
     <div class="footer">
-      <div class="container">
-		<a id="github" class="btn btn-lg btn-warning">
-			<i class="fa fa-lg fa-github pull-left" aria-hidden="true"></i> %owner% %github%
+      <div class="container" ng-controller = "HomeController">
+		<a href="{{github}}" id="github" class="btn btn-lg btn-warning">
+			<i class="fa fa-lg fa-github pull-left" aria-hidden="true"></i> {{owner}}
   		</a>
       </div>
     </div>

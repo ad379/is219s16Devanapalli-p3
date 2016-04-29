@@ -88,7 +88,49 @@ app.controller('HomeController', ['$scope', function($scope) {
       likes:	812,
       dislikes:	101,
       posterindex: 0
-	}
+	},
+    { 
+      title:      'Lord of the Rings: Return of the King', 
+      iscore:     8.9,
+      rating:     'PG-13',
+      runtime:    201,
+      released:   new Date('2003', '12', '17'),
+      country:    'USA',
+      posters:    ['img/LotR1.jpg','img/LotR2.jpg','img/LotR3.jpg'],
+      imdb:       'http://www.imdb.com/title/tt0167260/',
+      website:    'https://www.facebook.com/lordoftheringstrilogy/',
+      likes:      862,
+      dislikes:   93,
+      posterindex: 0
+      },
+    { 
+      title:      'Star Wars: A New Hope', 
+      iscore:     8.7,
+      rating:     'PG',
+      runtime:    125,
+      released:   new Date('1977', '05', '25'),
+      country:    'USA',
+      posters:    ['img/newhope1.jpg','img/newhope2.jpg','img/newhope3.jpg', 'img/newhope4.jpg'],
+      imdb:       'http://www.imdb.com/title/tt0076759/',
+      website:    'https://www.facebook.com/StarWars/',
+      likes:      762,
+      dislikes:   109,
+      posterindex: 0
+      },
+    { 
+      title:      'Deadpool', 
+      iscore:     8.3,
+      rating:     'R',
+      runtime:    108,
+      released:   new Date('2016', '02', '12'),
+      country:    'USA',
+      posters:    ['img/pool1.jpg','img/pool2.jpg','img/pool3.jpg','img/pool4.jpg'],
+      imdb:       'http://www.imdb.com/title/tt1431045/',
+      website:    'https://www.facebook.com/DeadpoolMovie/',
+      likes:      685,
+      dislikes:   76,
+      posterindex: 0
+      }
 	
 	
   ];

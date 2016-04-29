@@ -102,7 +102,31 @@ app.controller('HomeController', ['$scope', function($scope) {
       $scope.github = "http://www.github.com/ad379/is219s16Devanapalli-p3";	
 	
 	/* ADD FUNCTIONS FOR STEP 7 HERE */
-		
+      $scope.like= function(index) {
+            $scope.movies[index].likes++;             
+      }
+
+      $scope.dislike= function(index) {
+            $scope.movies[index].dislikes++;             
+      }             
+
+      $scope.posterClicker= function(index) {
+      
+            var len = $scope.movies[index].posters.length;
+            if($scope.movies[index].posterindex>(len-2)){
+                  console.log("reset");
+                  $scope.movies[index].posterindex=0;}
+            else{
+                  console.log("increased");
+                  $scope.movies[index].posterindex++;}
+      }
+
+      $scope.timeText= function(minutes) {
+            var hours = Math.floor(minutes/60);
+            var mins = minutes%60;
+            var time = hours+"h "+mins+"m"
+            return time;
+      }		
 	
 	
 	
